@@ -1,0 +1,97 @@
+html {
+    font-size: 10px;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing:5px;
+}
+
+body {
+    background: repeating-linear-gradient(135deg, #3b3b3b, #2b2b2b 30px);
+    color: wheat;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    padding: 1.8rem;
+    text-align: center;
+}
+.player {
+    background: radial-gradient(#211e24, #4f3341);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+img {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+#controls {
+    border: 1.5px wheat solid;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.controls-wrapper {
+    cursor: pointer;
+    color: wheat;
+    font-size: 7rem;
+    padding: 2.5rem;
+}
+
+span:hover {
+    color: #f3644b;
+}
+#currentSong {
+    overflow: hidden;
+}
+
+#songList {
+    overflow: hidden;
+    text-align: left;
+}
+
+li {
+    cursor: pointer;
+    padding: 1.5rem;
+}
+ li:hover {
+     background: #f3644b;
+ }
+
+ progress {
+     width: 98%;
+     margin-bottom: 2rem;
+     border-radius: 2rem;
+     background: transparent;
+ }
+
+ .animate {
+     animation-name: pulse;
+     animation-duration: 3s;
+     animation-iteration-count: 15;
+     animation-timing-function: ease-out;
+ }
+
+ @keyframes pulse {
+     0% {
+        transform: scale(0.8);
+     }
+
+     50% {
+        transform: scale(1);
+     }
+
+     100% {
+        transform: scale(0.5)
+     }
+ }
+ @media (min-width: 800px) {
+     body {
+         max-width: 60vw;
+         font-size: 1.9rem;
+     }
+ }
+
+ @media (max-height: 1400px){
+     body {
+ 
+         max-height: 60vh;
+     }
+ }
